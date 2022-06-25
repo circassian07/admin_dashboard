@@ -1,0 +1,94 @@
+:root {
+    --light-blue: #2992d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr 5fr / 1fr 5fr;
+    gap: 5px;
+    height: 100vh;
+}
+
+/* Main */
+
+.main {
+    border: 1px dashed orange;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.cards {
+    border: 1px dashed green;
+    grid-row: 1 / -1;
+}
+
+.misc {
+    display: grid;
+    grid-template-rows: 5fr 4fr;
+    border: 1px dashed green;
+}
+
+.announcements {
+    border: 1px dashed yellow;
+}
+
+.trending {
+    border: 1px dashed yellow;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background-color: var(--light-blue);
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: 1fr 3fr 5fr;
+}
+
+.logo {
+    border: 1px dashed black;
+}
+
+.nav1 {
+    border: 1px dashed black;
+}
+
+.nav2 {
+    border: 1px dashed black;
+}
+
+/* Header */
+
+.header {
+    border: 1px dashed brown;
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 2fr;
+}
+
+.search_bar {
+    border: 1px dashed blue;
+}
+
+.account {
+    border: 1px dashed blue;
+}
+
+.greeting {
+    border: 1px dashed blue;
+}
+
+.buttons {
+    border: 1px dashed blue;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 40%;
+    background-color: var(--light-blue);
+}
