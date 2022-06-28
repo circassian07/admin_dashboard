@@ -55,6 +55,7 @@
     justify-self: center;
     width: 80%;
     height: 90%;
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .announcements {
@@ -80,6 +81,16 @@
 .main_titles {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.misc_box > p {
+    padding: 10px;
+    border-bottom: 2px solid var(--light-pink);
 }
 
 /* Sidebar */
